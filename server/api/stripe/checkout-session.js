@@ -3,7 +3,7 @@ import Stripe from 'stripe';
 const stripe = new Stripe(
 	'sk_test_51QcRowCOMiAbWXXe5AggNYkm4LENaBORFfeeDUewWlN4qfA7wT83YYKQIczmbwdmSedcMkIkWYk0r521XvvzcmaY00meJ5gCip'
 );
-const domain = 'http://localhost:3003';
+const domain = 'http://localhost:3002';
 
 export default defineEventHandler(async (event) => {
 	/* const body = await readBody(event); */

@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<main>
+		<HeaderComponent />
+		<main class="mt-[60px]">
 			<NuxtPage />
 		</main>
 	</div>

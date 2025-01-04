@@ -17,13 +17,14 @@
 </script>
 <template>
 	<div>
+		<h1>Produkte</h1>
 		<form
 			@submit.prevent="checkout"
 			class="px-[1rem]">
 			<ul>
 				<li>Produkt 1</li>
 			</ul>
-			<button type="submit">In den Warenkorb</button>
+			<button type="submit">Weiter</button>
 		</form>
 	</div>
 </template>
