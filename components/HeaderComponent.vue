@@ -1,5 +1,11 @@
 <script setup>
-	const cartItems = useState('cartItems', () => []);
+	import { useStorage } from '@vueuse/core';
+
+	const cartItems = useStorage('cartItems', [
+		{ hello: 'hi', greeting: 'Hello' },
+		{ hello: 'hi2', greeting: 'Hello2' },
+		{ hello: 'hi3', greeting: 'Hello3' },
+	]);
 </script>
 <template>
 	<header

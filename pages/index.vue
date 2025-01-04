@@ -1,4 +1,12 @@
 <script setup>
+	import { useStorage } from '@vueuse/core';
+
+	const cartItems = useStorage('cartItems', [
+		{ hello: 'hi', greeting: 'Hello' },
+		{ hello: 'hi2', greeting: 'Hello2' },
+		{ hello: 'hi3', greeting: 'Hello3' },
+	]);
+
 	const checkout = async () => {
 		try {
 			const response = await $fetch('/api/stripe/checkout-session', {
@@ -16,8 +24,7 @@
 	};
 
 	function addToCart() {
-		const cartItems = useState('cartItems', () => []);
-		cartItems.value.push('Produkt 1');
+		cartItems.value.push({ hello: 'hi4', greeting: 'Hello4' });
 	}
 </script>
 <template>
