@@ -14,16 +14,17 @@
 			console.log(`Ein Fehler ist aufgetreten: ${err.message}`);
 		}
 	};
+
+	function addToCart() {
+		const cartItems = useState('cartItems', () => []);
+		cartItems.value.push('Produkt 1');
+	}
 </script>
 <template>
 	<div>
-		<form
-			@submit.prevent="checkout"
-			class="px-[1rem]">
-			<ul>
-				<li>Produkt 1</li>
-			</ul>
-			<button type="submit">In den Warenkorb</button>
-		</form>
+		<ul>
+			<li>Produkt 1</li>
+		</ul>
+		<button @click="addToCart">In den Warenkorb</button>
 	</div>
 </template>
