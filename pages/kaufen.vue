@@ -26,7 +26,7 @@
 			@submit.prevent="checkout"
 			class="px-[1rem]">
 			<ul>
-				<li v-for="item in cartItems">{{ item }}</li>
+				<li v-for="item in cartItems">{{ item.content.name }}</li>
 			</ul>
 			<button type="submit">Weiter</button>
 		</form>
