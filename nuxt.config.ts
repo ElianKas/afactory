@@ -11,5 +11,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@vueuse/nuxt'],
+  modules: ['@vueuse/nuxt', ['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_TOKEN }]],
 })

@@ -1,1 +1,0 @@
-<template>product-page</template>
