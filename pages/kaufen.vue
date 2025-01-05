@@ -1,4 +1,8 @@
 <script setup>
+	import { useSessionStorage } from '@vueuse/core';
+
+	const cartItems = useSessionStorage('cartItems', []);
+
 	const checkout = async () => {
 		try {
 			const response = await $fetch('/api/stripe/checkout-session', {
@@ -22,7 +26,7 @@
 			@submit.prevent="checkout"
 			class="px-[1rem]">
 			<ul>
-				<li>Produkt 1</li>
+				<li v-for="item in cartItems">{{ item }}</li>
 			</ul>
 			<button type="submit">Weiter</button>
 		</form>
