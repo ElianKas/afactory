@@ -18,6 +18,19 @@
 </script>
 <template>
 	<div>
+		<section>
+			<div class="h-[80px] grid place-items-center">
+				<h1>Welcome to AFACTORY the future of production.</h1>
+			</div>
+			<div class="bg-black max-sm:aspect-[3/5] w-full">
+				<div>
+					<h2>Like Paper</h2>
+					<p>Designed by Lars Harnhardt</p>
+					<br />
+					<button class="btn"></button>
+				</div>
+			</div>
+		</section>
 		<ul>
 			<li
 				v-if="data"
