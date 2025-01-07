@@ -12,7 +12,7 @@
 	});
 </script>
 <template>
-	<section class="py-[2rem] text-center">
+	<section class="py-[2rem] px-[1rem] text-center">
 		<ClientOnly>
 			<template #fallback>
 				<div class="grid place-items-center">
@@ -24,7 +24,7 @@
 				v-if="data"
 				:slides-per-view="1.3"
 				:space-between="16"
-				:centeredSlides="true"
+				:centeredSlides="false"
 				:navigation="false">
 				<swiper-slide
 					v-for="item in data.stories"
@@ -36,10 +36,11 @@
 					</NuxtLink>
 				</swiper-slide>
 			</swiper-container>
-			<button
+			<NuxtLink
+				to="/produkte"
 				class="btn btn-wide rounded-full bg-black text-white mt-[2rem]">
 				Entdecken
-			</button>
+			</NuxtLink>
 		</ClientOnly>
 	</section>
 </template>
