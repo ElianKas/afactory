@@ -4,6 +4,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag === 'swiper-container' || tag === 'swiper-slide',
+    },
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
