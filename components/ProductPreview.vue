@@ -12,12 +12,17 @@
 	});
 </script>
 <template>
-	<section>
+	<section class="py-[2rem] text-center">
 		<ClientOnly>
+			<template #fallback>
+				<div class="grid place-items-center">
+					<div class="skeleton w-[80%] aspect-[4/5]"></div>
+				</div>
+			</template>
 			<swiper-container
 				class="cursor-grab"
 				v-if="data"
-				:slides-per-view="1.5"
+				:slides-per-view="1.3"
 				:space-between="16"
 				:centeredSlides="true"
 				:navigation="false">
@@ -26,11 +31,15 @@
 					:key="item"
 					><NuxtLink
 						:to="`/produkte/${item.slug}`"
-						class="border aspect-[4/5] rounded-[--border-radius] flex flex-col justify-end p-[1rem]">
+						class="border aspect-[4/5] rounded-[--border-radius] flex flex-col justify-end p-[1rem] text-left">
 						{{ item.content.name }}
 					</NuxtLink>
 				</swiper-slide>
 			</swiper-container>
+			<button
+				class="btn btn-wide rounded-full bg-black text-white mt-[2rem]">
+				Entdecken
+			</button>
 		</ClientOnly>
 	</section>
 </template>
