@@ -27,7 +27,7 @@
 	<div
 		@click="scrollToTop"
 		v-if="btn"
-		class="bg-white text-black fixed bottom-[1rem] right-[1rem] cursor-pointer z-[999] grid place-items-center w-[50px] aspect-square rounded-full shadow">
+		class="bg-white text-black cursor-pointer z-[999] grid place-items-center w-[50px] aspect-square rounded-full shadow">
 		<SvgNavigationArrow />
 	</div>
 </template>

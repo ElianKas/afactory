@@ -4,6 +4,6 @@
 		<main class="mt-[60px]">
 			<NuxtPage />
 		</main>
-		<ScrollTop />
+		<FooterComponent />
 	</div>
 </template>
