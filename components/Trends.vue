@@ -38,11 +38,6 @@
 					</NuxtLink>
 				</swiper-slide>
 			</swiper-container>
-			<NuxtLink
-				to="/produkte"
-				class="btn btn-wide rounded-full bg-black text-white mt-[2rem]">
-				Entdecken
-			</NuxtLink>
 		</ClientOnly>
 	</section>
 </template>

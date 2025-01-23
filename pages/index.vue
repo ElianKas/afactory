@@ -72,5 +72,6 @@
 				</div>
 			</div>
 		</article>
+		<Trends />
 	</div>
 </template>
