@@ -29,8 +29,23 @@
 				</div>
 			</div>
 		</article>
-		<section>
-			<h2></h2>
+		<section class="px-[1rem] py-[2rem]">
+			<h2 class="text-2xl">STUDIO HIGHLIGHT</h2>
+			<br />
+			<div>
+				<div
+					class="w-full aspect-square border rounded-[--border-radius]"></div>
+				<div class="grid grid-cols-2 gap-[1rem] py-[1rem]">
+					<div
+						class="aspect-[1.618/2] border rounded-[--border-radius]"></div>
+					<div
+						class="aspect-[1.618/2] border rounded-[--border-radius]"></div>
+					<div
+						class="aspect-[1.618/2] border rounded-[--border-radius]"></div>
+					<div
+						class="aspect-[1.618/2] border rounded-[--border-radius]"></div>
+				</div>
+			</div>
 		</section>
 	</div>
 </template>
