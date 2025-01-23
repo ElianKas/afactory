@@ -13,6 +13,8 @@
 </script>
 <template>
 	<section class="py-[2rem] px-[1rem] text-center">
+		<h2 class="text-2xl">Trendprodukte</h2>
+		<br />
 		<ClientOnly>
 			<template #fallback>
 				<div class="grid place-items-center">
