@@ -5,8 +5,8 @@
 </script>
 <template>
 	<header
-		class="flex justify-between h-[60px] items-center inset-0 fixed border-b bg-white px-[1rem] z-[999]">
-		<NuxtLink to="/"><h1>Mein Shop</h1></NuxtLink>
+		class="flex justify-between h-[60px] items-center inset-0 fixed bg-white px-[1rem] z-[999]">
+		<NuxtLink to="/"><SvgBrandShort /></NuxtLink>
 		<div>
 			<NuxtLink to="/kaufen">{{ cartItems.length }} Artikel</NuxtLink>
 		</div>
