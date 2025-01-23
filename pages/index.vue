@@ -8,7 +8,7 @@
 			</p>
 		</section>
 		<article>
-			<div class="border w-full aspect-video"></div>
+			<div class="border aspect-video"></div>
 			<div class="px-[1rem] py-[3rem]">
 				<p class="text-right">Neuer Designer in AFACTORY</p>
 				<h2 class="text-2xl py-[1rem]">
@@ -24,7 +24,7 @@
 				<br />
 				<div class="flex gap-[1rem] items-center">
 					<div
-						class="h-[50px] aspect-square border rounded-full"></div>
+						class="h-[70px] aspect-square border rounded-full"></div>
 					<NuxtLink to="/"><u>Shop besuchen</u></NuxtLink>
 				</div>
 			</div>
@@ -47,5 +47,30 @@
 				</div>
 			</div>
 		</section>
+		<article class="py-[2rem]">
+			<div class="border aspect-video"></div>
+			<div class="px-[1rem] py-[3rem]">
+				<h2 class="text-2xl">Designer Spotlight</h2>
+				<br />
+				<p>
+					About dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+					irure dolor in reprehenderit in voluptate velit esse cillum
+					dolore eu fugiat nulla pariatur.“
+				</p>
+				<br />
+				<br />
+				<div class="flex gap-[1rem] items-center">
+					<div
+						class="h-[70px] aspect-square border rounded-full"></div>
+					<NuxtLink to="/"
+						>Mehr über <br />
+						Lars Harnhard</NuxtLink
+					>
+				</div>
+			</div>
+		</article>
 	</div>
 </template>
