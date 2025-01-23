@@ -73,5 +73,6 @@
 			</div>
 		</article>
 		<Trends />
+		<Designers />
 	</div>
 </template>
