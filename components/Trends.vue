@@ -2,7 +2,6 @@
 	import { register } from 'swiper/element/bundle';
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
-		version: useRoute().query._storyblok ? 'draft' : 'published',
 		is_startpage: false,
 		content_type: 'product',
 	});
