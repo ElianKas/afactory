@@ -7,9 +7,9 @@
 		cartItems.value.push(item);
 	}
 
-	onMounted(() => {
+	/* 	onMounted(() => {
 		console.log(props.blok);
-	});
+	}); */
 </script>
 <template>
 	<article>

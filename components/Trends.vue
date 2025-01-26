@@ -9,7 +9,6 @@
 
 	onMounted(() => {
 		register();
-		console.log(data);
 	});
 </script>
 <template>

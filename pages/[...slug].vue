@@ -4,6 +4,9 @@
 		slug && slug.length > 0 ? slug.join('/') : 'home',
 		{ version: 'draft' }
 	);
+	/* onMounted(() => {
+		console.log(slug);
+	}); */
 </script>
 <template>
 	<StoryblokComponent
