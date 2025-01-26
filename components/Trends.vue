@@ -3,19 +3,20 @@
 	const storyblokApi = useStoryblokApi();
 	const { data } = await storyblokApi.get('cdn/stories', {
 		version: useRoute().query._storyblok ? 'draft' : 'published',
-		starts_with: 'produkte',
 		is_startpage: false,
+		content_type: 'product',
 	});
 
 	onMounted(() => {
 		register();
+		console.log(data);
 	});
 </script>
 <template>
 	<section class="py-[2rem] px-[1rem] text-center">
 		<h2 class="text-2xl">Trendprodukte</h2>
 		<br />
-		<ClientOnly>
+		<!-- <ClientOnly>
 			<template #fallback>
 				<div class="grid place-items-center">
 					<div class="skeleton w-[80%] aspect-[4/5]"></div>
@@ -38,6 +39,6 @@
 					</NuxtLink>
 				</swiper-slide>
 			</swiper-container>
-		</ClientOnly>
+		</ClientOnly> -->
 	</section>
 </template>
