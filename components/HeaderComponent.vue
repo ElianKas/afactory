@@ -40,7 +40,7 @@
 </script>
 <template>
 	<header
-		class="relative flex justify-between h-[60px] items-center inset-0 fixed bg-white px-[1rem] z-[999]">
+		class="flex justify-between h-[60px] items-center inset-0 fixed bg-white px-[1rem] z-[999]">
 		<NuxtLink to="/"><SvgBrandShort /></NuxtLink>
 		<input
 			id="searchInput"
@@ -52,25 +52,34 @@
 			v-model="searchTerm" />
 		<ul
 			v-if="isSearchActive && searchResults !== null"
-			class="absolute bg-white border w-full left-0 top-[100%] px-[1rem] py-[2rem]">
-			<h2>Designer</h2>
-			<li
-				v-for="designer in searchResults.designers"
-				:key="designer">
-				{{ designer }}
-			</li>
-			<h2>Kollektionen</h2>
-			<li
-				v-for="collection in searchResults.collections"
-				:key="collection">
-				{{ collection }}
-			</li>
-			<h2>Produkte</h2>
-			<li
-				v-for="product in searchResults.products"
-				:key="product">
-				{{ product }}
-			</li>
+			class="absolute bg-white h-[calc(100vh-60px)] overflow-scroll border w-full left-0 top-[100%] px-[1rem] py-[2rem] flex flex-col gap-[1rem]">
+			<div>
+				<h2>Designer</h2>
+				<br />
+				<li
+					v-for="designer in searchResults.designers"
+					:key="designer">
+					{{ designer.content }}
+				</li>
+			</div>
+			<div>
+				<h2>Kollektionen</h2>
+				<br />
+				<li
+					v-for="collection in searchResults.collections"
+					:key="collection">
+					{{ collection.content }}
+				</li>
+			</div>
+			<div>
+				<h2>Produkte</h2>
+				<br />
+				<li
+					v-for="product in searchResults.products"
+					:key="product">
+					{{ product.content }}
+				</li>
+			</div>
 		</ul>
 		<div>
 			<NuxtLink to="/kaufen">{{ cartItems.length }} Artikel</NuxtLink>
