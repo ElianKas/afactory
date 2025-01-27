@@ -29,6 +29,9 @@
 			}
 		});
 		searchResults.value = groups;
+		if (newTerm === '') {
+			reset();
+		}
 	});
 
 	function reset() {
