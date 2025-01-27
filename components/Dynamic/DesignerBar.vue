@@ -1,5 +1,4 @@
 <script setup>
-	let color = 'orange';
 	const emit = defineEmits(['emitProfile']);
 	const storyblokApi = useStoryblokApi();
 	const { slug } = useRoute().params;

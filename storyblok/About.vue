@@ -6,6 +6,7 @@
 </script>
 <template>
 	<article>
+		<DynamicDesignerBar />
 		{{ blok }}
 	</article>
 </template>
