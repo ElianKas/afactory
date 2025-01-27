@@ -25,7 +25,9 @@
 				<div class="flex gap-[1rem] items-center">
 					<div
 						class="h-[70px] aspect-square border rounded-full"></div>
-					<NuxtLink to="/"><u>Shop besuchen</u></NuxtLink>
+					<NuxtLink to="/lars-harnhard/shop"
+						><u>Shop besuchen</u></NuxtLink
+					>
 				</div>
 			</div>
 		</article>
