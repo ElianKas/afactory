@@ -10,18 +10,14 @@
 	});
 	function handleEmitProfile(profile) {
 		console.log(profile);
-		/* 
-		TODO
-		
-		*/
 	}
 	onMounted(() => {});
 </script>
 <template>
 	<article>
 		<DynamicDesignerBar @emit-profile="handleEmitProfile" />
-		<h2>Produkte</h2>
-		<p>{{ products }}</p>
+		<DynamicDesignerCollections />
+		<DynamicDesignerProducts :products="products.stories" />
 		<br />
 		<br />
 		<h2>Bio</h2>
