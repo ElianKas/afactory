@@ -18,9 +18,9 @@
 		<DynamicDesignerBar @emit-profile="handleEmitProfile" />
 		<DynamicDesignerCollections />
 		<DynamicDesignerProducts :products="products.stories" />
-		<br />
-		<br />
-		<h2>Bio</h2>
-		<p>{{ blok.text }}</p>
+		<section class="px-[1rem] py-[2rem]">
+			<h2>Bio</h2>
+			<p>{{ blok.text }}</p>
+		</section>
 	</article>
 </template>
