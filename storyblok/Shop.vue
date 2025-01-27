@@ -8,11 +8,15 @@
 		starts_with:
 			slug[0] /* receive products published by the designer (slug = designer name) */,
 	});
+
+	function handleEmitProfile(profile) {
+		console.log(profile);
+	}
 	onMounted(() => {});
 </script>
 <template>
 	<article>
-		<DynamicDesignerBar />
+		<DynamicDesignerBar @emit-profile="handleEmitProfile" />
 		<h2>Bio</h2>
 		<p>{{ blok.text }}</p>
 		<br />
