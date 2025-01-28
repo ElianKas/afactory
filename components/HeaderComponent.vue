@@ -43,14 +43,18 @@
 </script>
 <template>
 	<header
-		class="flex justify-between h-[60px] items-center inset-0 fixed bg-white px-[1rem] z-[999]">
-		<NuxtLink to="/"><SvgBrandShort /></NuxtLink>
+		class="flex gap-[1rem] h-[60px] items-center inset-0 fixed bg-white px-[1rem] py-[.7rem] z-[999]">
+		<NuxtLink
+			to="/"
+			class="h-full"
+			><SvgBrandShort class="h-full w-auto"
+		/></NuxtLink>
 		<input
 			id="searchInput"
 			@keypress.enter="reset()"
 			@focus="isSearchActive = true"
 			@blur="reset()"
-			class="border rounded-full px-[1rem] py-[.4rem]"
+			class="border rounded-full px-[1rem] py-[.4rem] h-full w-full"
 			type="text"
 			v-model="searchTerm" />
 		<ul
@@ -84,8 +88,9 @@
 				</li>
 			</div>
 		</ul>
-		<div>
-			<NuxtLink to="/kaufen">{{ cartItems.length }} Artikel</NuxtLink>
+		<div
+			class="h-full border rounded-full grid place-items-center aspect-square">
+			<NuxtLink to="/kaufen">{{ cartItems.length }}</NuxtLink>
 		</div>
 	</header>
 </template>
