@@ -8,8 +8,9 @@
 		starts_with:
 			slug[0] /* receive products published by the designer (slug = designer name) */,
 	});
-	function handleEmitProfile(profile) {
-		/* console.log(profile); */
+	const profile = ref(null);
+	function handleEmitProfile(profileObj) {
+		profile.value = profileObj;
 	}
 	onMounted(() => {});
 </script>
@@ -18,9 +19,13 @@
 		<DynamicDesignerBar @emit-profile="handleEmitProfile" />
 		<DynamicDesignerCollections />
 		<DynamicDesignerProducts :products="products.stories" />
-		<section class="px-[1rem] py-[2rem]">
-			<h2>Bio</h2>
-			<p>{{ blok.text }}</p>
+		<section
+			class="px-[1rem] py-[5rem] bg-black text-white text-center">
+			<ClientOnly>
+				<p>{{ blok.text }}</p>
+				<br />
+				<p>{{ profile.content.name }}</p>
+			</ClientOnly>
 		</section>
 	</article>
 </template>
