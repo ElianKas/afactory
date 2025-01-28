@@ -49,14 +49,18 @@
 			class="h-full"
 			><SvgBrandShort class="h-full w-auto"
 		/></NuxtLink>
-		<input
-			id="searchInput"
-			@keypress.enter="reset()"
-			@focus="isSearchActive = true"
-			@blur="reset()"
-			class="border rounded-full px-[1rem] py-[.4rem] h-full w-full"
-			type="text"
-			v-model="searchTerm" />
+		<div class="relative w-full h-full">
+			<input
+				id="searchInput"
+				@keypress.enter="reset()"
+				@focus="isSearchActive = true"
+				@blur="reset()"
+				class="border border-paragraph rounded-full px-[1rem] py-[.4rem] h-full w-full"
+				type="text"
+				v-model="searchTerm" />
+			<SvgNavigationSearch
+				class="absolute right-[1rem] top-[50%] translate-y-[-50%]" />
+		</div>
 		<ul
 			v-if="isSearchActive && searchResults !== null"
 			class="absolute bg-white h-[calc(100vh-60px)] overflow-scroll border w-full left-0 top-[100%] px-[1rem] py-[2rem] flex flex-col gap-[1rem]">
