@@ -1,34 +1,37 @@
 <template>
 	<div>
-		<section class="grid place-items-center py-[3rem]">
-			<h1><SvgBrandLogo class="w-[80%] m-auto" /></h1>
+		<section class="grid place-items-center py-[2rem]">
+			<h1><SvgBrandLogoGrey class="w-[250px] h-auto m-auto" /></h1>
 			<p
-				class="m-auto overflow-hidden w-full text-nowrap font-bold pt-[1.5rem]">
+				class="m-auto overflow-hidden w-full text-nowrap font-bold pt-[1rem] text-grey">
 				THE DIGITAL MARKETPLACE FOR HANDCRAFTED 3D PRINTED OBJECTS
 			</p>
 		</section>
 		<article>
-			<div class="border aspect-video"></div>
-			<div class="px-[1rem] py-[3rem]">
-				<p class="text-right">Neuer Designer in AFACTORY</p>
+			<div
+				class="border aspect-video relative px-[1rem] ml-[1rem] rounded-l-[--border-radius]">
+				<div
+					class="absolute top-[calc(100%-60px)] flex items-center gap-[1rem]">
+					<div
+						class="h-[90px] aspect-square bg-black rounded-full"></div>
+					<p>Neuer Designer in AFACTORY</p>
+				</div>
+			</div>
+			<div class="px-[1rem] py-[3rem] text-center">
 				<h2 class="text-2xl py-[1rem]">
 					Lerne
 					<span class="text-orange-400">@Lars Harnhard</span> kennen
 				</h2>
-				<p>
+				<p class="pb-[1.5rem] text-paragraph">
 					About dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Ut enim ad minim veniam, quis nostrud
 				</p>
-				<br />
-				<br />
-				<div class="flex gap-[1rem] items-center">
-					<div
-						class="h-[70px] aspect-square border rounded-full"></div>
-					<NuxtLink to="/lars-harnhard/shop"
-						><u>Shop besuchen</u></NuxtLink
-					>
-				</div>
+				<NuxtLink
+					to="/lars-harnhard/shop"
+					class="border-b py-[.5rem]"
+					>Shop besuchen</NuxtLink
+				>
 			</div>
 		</article>
 		<section class="px-[1rem] py-[2rem]">
@@ -54,7 +57,7 @@
 			<div class="px-[1rem] py-[3rem]">
 				<h2 class="text-2xl">Designer Spotlight</h2>
 				<br />
-				<p>
+				<p class="text-paragraph">
 					About dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco

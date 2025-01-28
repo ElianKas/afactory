@@ -13,6 +13,7 @@ export default {
 			black: '#000000',
 			white: '#ffffff',
 			grey: '#EAEAEA',
+			paragraph: '#5A5A5A',
 		},
 		extend: {},
 	},
