@@ -55,9 +55,14 @@
 				@keypress.enter="reset()"
 				@focus="isSearchActive = true"
 				@blur="reset()"
-				class="border border-paragraph rounded-full px-[1rem] py-[.4rem] h-full w-full"
+				class="border border-paragraph rounded-full pl-[3.9rem] pr-[2.8rem] py-[.4rem] h-full w-full"
 				type="text"
 				v-model="searchTerm" />
+			<div
+				class="absolute left-[1rem] top-[50%] translate-y-[-50%] h-[8px] w-[35px] flex flex-col justify-between">
+				<div class="border-b border-paragraph w-full"></div>
+				<div class="border-b border-paragraph w-[60%]"></div>
+			</div>
 			<SvgNavigationSearch
 				class="absolute right-[1rem] top-[50%] translate-y-[-50%]" />
 		</div>
