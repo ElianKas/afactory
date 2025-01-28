@@ -20,7 +20,7 @@
 		<DynamicDesignerCollections />
 		<DynamicDesignerProducts :products="products.stories" />
 		<section
-			class="px-[1rem] py-[5rem] bg-black text-white text-center">
+			class="px-[1rem] py-[3rem] bg-black text-white text-center">
 			<ClientOnly>
 				<p>{{ blok.text }}</p>
 				<br />
