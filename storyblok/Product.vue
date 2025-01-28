@@ -13,7 +13,9 @@
 </script>
 <template>
 	<article>
-		{{ blok.name }}
+		<p>
+			{{ blok }}
+		</p>
 		<br />
 		<button @click="addToCart(blok)">In den Warenkorb</button>
 	</article>
