@@ -9,7 +9,7 @@
 			slug[0] /* receive products published by the designer (slug = designer name) */,
 	});
 	function handleEmitProfile(profile) {
-		console.log(profile);
+		/* console.log(profile); */
 	}
 	onMounted(() => {});
 </script>
