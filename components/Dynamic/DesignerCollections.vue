@@ -16,13 +16,13 @@
 	});
 </script>
 <template>
-	<section class="px-[1rem] py-[2rem]">
-		<h2>Kollektionen</h2>
+	<section class="px-[1rem] pt-[2rem] pb-[1rem]">
+		<h2 class="text-2xl">Kollektionen</h2>
 		<br />
 		<ClientOnly>
 			<template #fallback>
 				<div class="grid place-items-center">
-					<div class="skeleton w-[80%] aspect-[4/5]"></div>
+					<div class="skeleton w-full aspect-[2/1.618]"></div>
 				</div>
 			</template>
 			<swiper-container
@@ -35,8 +35,8 @@
 					v-for="collection in collections.stories"
 					:key="collection"
 					><li
-						class="border aspect-[4/5] rounded-[--border-radius] flex flex-col justify-end p-[1rem] text-left">
-						{{ collection }}
+						class="border aspect-[2/1.618] rounded-[--border-radius] flex flex-col justify-end p-[1rem] text-left">
+						{{ collection.name }}
 					</li>
 				</swiper-slide>
 			</swiper-container>

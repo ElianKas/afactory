@@ -2,8 +2,8 @@
 	const props = defineProps({ products: Array });
 </script>
 <template>
-	<section class="px-[1rem] py-[2rem]">
-		<h2>Produkte</h2>
+	<section class="px-[1rem] pb-[2rem] pt-[1rem]">
+		<div class="border-b border-grey"></div>
 		<br />
 		<ul>
 			<li
